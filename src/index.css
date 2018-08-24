@@ -1,0 +1,403 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size:16px;
+  background: white;
+}
+ul{
+  list-style:none;
+  padding:0;
+}
+#main>footer{
+  width:100%;
+  position: fixed;
+  bottom: 0;
+  z-index:10;
+  background-color:rgb(70, 67, 67);
+}
+#mainMenu{
+  display: flex;
+  justify-content: space-around;
+}
+#mainMenu img{
+  width:5rem;
+  height:4.2rem;
+}
+#mainMenu>a>p{
+  width:5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size:1rem;
+  margin:0;
+  color: white;
+}
+#mainMenu span{
+  display: inline-block;
+  margin-top:-.8rem;
+}
+#content{
+  overflow:auto;
+  height:36rem;
+}
+/* 发现页面 */
+#foundHead{
+  align-items: center;
+  background-color:red;
+  display:flex;
+  justify-content:space-around;
+  padding:0 1rem;
+}
+#foundHead>img{
+  width:2rem;
+  height:2rem;
+}
+#foundNav{
+  display: flex;
+  justify-content: space-around;
+  padding:1rem 0;
+}
+#foundNav>a{
+  text-decoration: none;
+  color:black;
+}
+/* 音乐界面轮播图 */
+.space-carousel {
+  padding: 1rem;
+  overflow: hidden;
+}
+#musicMenu{
+  display: flex;
+  justify-content: space-around;
+}
+#musicMenu>img{
+  width:4rem;
+  height:5.5rem;
+}
+/* 推荐歌单 */
+#recommend>h4{
+  border-left: .2rem solid red;
+  padding-left:.5rem;
+}
+#musics_list{
+  list-style:none;
+  padding:0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#musics_list>li>img{
+  width:8rem;
+}
+#musics_list>li>p{
+  width:8rem;
+}
+/* 歌单 */
+#music_list_head{
+  background: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 1rem;
+}
+#music_list_head>h3{
+  color: white;
+  margin:0;
+}
+#music_list_head>img{
+  width:2rem;
+}
+#list_info{
+  background: gray;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#list_info>div{
+  width:60%;
+  color: white;
+}
+#list_info>img{
+  width:8rem;
+  height:8rem;
+}
+#list_info>ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width:100%;
+  padding: 0;
+}
+#list_info>ul img{
+  width:2rem;
+}
+#list_info>ul p{
+  margin:0;
+  color: white;
+}
+#musicList_name>img{
+  width:2rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right:.5rem;
+}
+#musicList_name>svg{
+  vertical-align: middle;
+}
+#list_menu>li{
+  text-align: center;
+}
+#list_play>p>img{
+  width:1.6rem;
+  vertical-align: middle;
+  margin:0 .5rem;
+}
+#song_list>li{
+  display: flex;
+  margin:0 .5rem;
+}
+#song_list>li>div{
+  display: flex;
+  align-items: center;
+}
+#songs_item{
+  display: flex;
+  flex-wrap: wrap;
+  width:10rem;
+  margin-left:1rem;
+}
+#songs_item>span:last-child{
+  color: gray;
+  width:10rem;
+}
+/* 播放 */
+#song_main{
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#song_main>header{
+  border-bottom:1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 .8rem;
+}
+#song_main>header>img{
+  width:1.5rem;
+  height:1.5rem;
+}
+#song_main>header>p>span{
+  width:10rem;
+  text-align: center;
+  color: white;
+}
+#song_main>header>p{
+  display: flex;
+  width:10rem;
+  flex-wrap: wrap;
+}
+/* 歌曲封面 */
+#song_img{
+  background-image: url('http://172.20.10.5:3000/img/disc-ip6.png');
+  background-size:20rem;
+  background-repeat: no-repeat;
+  /* background-position-x:3rem;
+  background-position-y:2rem; */
+  margin:5rem 3rem;
+  text-align: center;
+  vertical-align:middle;
+}
+#song_img>img{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width:12rem;
+  border-radius:50%;
+  /* position: relative;
+  left:7rem;
+  top:3rem; */
+}
+#song_msg{
+  display: flex;
+  justify-content: space-around;
+}
+#song_msg>img{
+  width:2rem;
+  height:2rem;
+}
+#song_control>div{
+  width:100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+#play_control{
+  display: flex;
+  justify-content: space-around;
+  padding:2rem 0;
+  align-items: center;
+}
+#play_control>li>img{
+  width:2rem;
+}
+#play_control>li:nth-child(3)>img{
+  width:4rem;
+}
+#song_rotate>img{
+  width:9rem;
+  position: absolute;
+  left:45%;
+}
+/* 注册 */
+#reg_header{
+  background: red;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+#reg_header>h3{
+  margin-left:7.5rem
+}
+.reg_input{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(202, 199, 199);
+  margin:1rem 0;
+}
+.reg_input>span{
+  font-size: 1.2rem;
+}
+.reg_input img{
+  width:1.5rem;
+  height:1.5rem;
+  margin:0 1rem;
+}
+#reg_btn{
+  margin:3rem 0;
+}
+#reg_btn a{
+  width: 22rem;
+  margin: 0 auto;
+  border-radius:2rem;
+  background: red;
+  color: white;
+}
+#go_reg{
+  margin:0;
+  text-align: center;
+}
+#go_reg>a{
+  color: gray;
+}
+.red{
+  color: red;
+}
+/* 我的音乐 */
+#myMusic_header{
+  font-size:1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: red;
+  padding:0 1rem;
+}
+#myMusic_header>img{
+  width:2rem;
+}
+#myMusic_content>li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+}
+#myMusic_content img{
+  width:3rem;
+  margin: 0 1rem;
+}
+#myMusic_content>li>p{
+  display: flex;
+  align-items: center;
+}
+#myMusic_content>li>p:nth-child(2)>span{
+  color: gray;
+  font-size: 1rem;
+}
+/* 账号 */
+#user_main{
+  background: rgb(230, 229, 229);
+}
+#user_header{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:1rem;
+  box-sizing: border-box;
+  background: white;
+  margin-bottom:1rem;
+}
+#user_header>div{
+  display: flex;
+}
+#user_header>div img{
+  width:5rem;
+  height:5rem;
+  border-radius:50%;
+  border:1px solid gainsboro;
+  margin-right:1rem;
+}
+#user_header>div>div>p:last-child{
+  text-align: center;
+  color: gray;
+  border:1px solid gainsboro;
+  border-radius:.5rem;
+}
+#user_header>p{
+  height:1.5rem;
+  border: 1px solid red;
+  color: red;
+  line-height: 1.5rem;
+  padding:0 .5rem;
+  border-radius: 1rem;
+}
+#user_info{
+  display: flex;
+  width:100%;
+  padding-top:1rem;
+  border-top:1px solid gainsboro;
+}
+#user_info>li{
+width:25%;
+text-align: center;
+font-size:.9rem;
+}
+#user_info>li:not(:last-child)>p{
+  border-right:1px solid gainsboro;
+}
+#user_info>li>p{
+  margin: 0;
+}
+#user_info>li>p:first-child{
+  color: gray;
+}
+.my_msg{
+  margin-bottom: 1rem;
+}
+/* 视频 */
+#video>li>video{
+  width:100%;
+}
+/* 搜索 */
+#search_item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:.5rem;
+  border-bottom:1px solid gainsboro;
+}
+#search_item img{
+  width:1.5rem;
+}
